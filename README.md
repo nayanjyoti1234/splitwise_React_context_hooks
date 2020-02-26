@@ -1,6 +1,6 @@
 # splitwise_React_context_hooks
 
-This Application is been build using react, for global state management context+hooks is been used
+This Application is been build using react, for global state management context+hooks is used
 
 Hosted on :https://quizzical-torvalds-ddc88c.netlify.com/
 
