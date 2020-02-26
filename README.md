@@ -6,9 +6,9 @@ Hosted on :https://quizzical-torvalds-ddc88c.netlify.com/
 
 In order to start ,
 
-   1.First add your and the name of friends you want to start transcation with ,click on Add Friend in navbar
+   1.First add yourname and the name of your friends you want to start transcation with ,click on Add Friend in navbar
    
-   2.To add the amount , givername and recievername , click on Add amount in navbar
+   2.To add the amount , who has to give and who will recieve , click on Add amount in navbar
    
    3.To check all the transaction , click on Overall transactions in navbar
   
