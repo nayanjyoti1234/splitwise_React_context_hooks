@@ -3,6 +3,7 @@ import Navbar                         from './components/Navbar';
 import Home                           from './components/Home';
 import Groups                         from './components/Groups';
 import Friends                        from './components/Friends';
+import Addgroup                       from './components/Addgroup';
 import { BrowserRouter,Route}         from 'react-router-dom';
 import ContextProvider                from './context.js';
 
@@ -19,6 +20,7 @@ class App extends Component{
 							<Route path='/' component={Home} exact/>
 							<Route path='/friends' component={Friends}/>
 							<Route path='/groups' component={Groups}/>
+							<Route path='/addgroups' component={Addgroup}/>
 						</ContextProvider>
 					</div>
 				</BrowserRouter>

@@ -1,6 +1,7 @@
 export function reducer(state,action){
 
 	const value = {...state};
+	console.log(value.groups[action.key]);
 
 	switch(action.type){
 		case 'ADD_FRIEND':
@@ -12,29 +13,34 @@ export function reducer(state,action){
 				]
 			}
 		case 'ADD_GROUP':
-			return {
-				...value,
-				groups:[
-					...value.groups,
-					action.payload
-				]
-			}
-		case 'ADD_GROUP_FRIEND':
-			return {
-				...value,
-				groupfriend:{
-					...value.groupfriend,
+				return {
+					...value,
 					groups:[
-						...value.groupfriend.groups,
-						{[action.key]:action.payload}
+						...value.groups,
+						action.payload
 					]
 				}
-			}
-		case 'REMOVE_FRIEND':
+		case 'ADD_GROUP1':
+				return {
+					...value,
+					group:[
+						...value.group,
+						action.payload
+					]
+				}
+		case 'REMOVE_DATA':
+			return {
+					group:[],
+					amount:[],
+					groups:[],
+					friends:[]
+			};
+
+		case 'REMOVE_GROUP':
 			return {
 				...value,
-				friends:[],
-				amount:[]
+				amount:value.amount.filter(items=> items.grouping !== action.key),
+				group:value.group.filter(items=> items !== action.key)
 			}
 		case 'ADD_AMOUNT':
 			return {

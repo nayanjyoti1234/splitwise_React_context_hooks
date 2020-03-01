@@ -6,9 +6,7 @@ export const context = createContext();
 export const initialState = {
 	friends     :[],
 	groups      :[],
-	groupfriend :{
-		groups:[]
-	},
+	group		:[],
 	amount      :[]
 };
 

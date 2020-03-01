@@ -39,7 +39,29 @@
   	border: 1px solid #ccc;
 	background-color:#93C775;
 }
-input[type=text]{
+.groupinformation1{
+	margin-left:4vh;
+	margin-top:10px;
+	font-size:20px;
+	width:90%;
+	height:80%;
+	border-radius:20px;
+  	border: 1px solid #ccc;
+	background-color:#93C775;
+}
+.text{
+  margin-left:50vh;
+  margin-top:1vh;
+  height:8vh;
+  display:block;
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.number{
   margin-left:50vh;
   margin-top:1vh;
   height:10vh;
@@ -51,19 +73,7 @@ input[type=text]{
   box-sizing: border-box;
   resize: vertical;
 }
-input[type=number]{
-  margin-left:50vh;
-  margin-top:1vh;
-  height:10vh;
-  display:block;
-  width: 50%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-}
-input[type=submit] {
+.Submit{
   margin-top:2vh;
   height:9vh;
   width:30%;
@@ -131,23 +141,30 @@ input[type=submit] {
 	background-color:#EEF1EB;
 	width:90%;
 }
+.addgroups{
+	margin-top:6px;
+	width:25%;
+	float:left;
+	letter-spacing:3px;
+	text-align:center;
+}
 .friends{
 	margin-top:6px;
-	width:33%;
+	width:25%;
 	float:left;
 	letter-spacing:3px;
 	text-align:center;
 }
 .ho{
 	margin-top:6px;
-	width:33%;
+	width:25%;
 	float:left;
 	letter-spacing:3px;
 	text-align:center;
 }
 .groups{
 	margin-top:6px;
-	width:33%;
+	width:25%;
 	float:left;
 	letter-spacing:3px;
 	text-align:center;
@@ -159,38 +176,67 @@ a:hover {
   color: red;
 }
 .search{
+	height:10vh;
 	display:flex;
 	justify-content:center;
+	border-radius:10px;
+	background-color:#D0D0D0;
+	margin-bottom:15px;
 }
 .search1{
 	justify-content:center;
+	justify-content:space-around;
 }
-.input{
+.input1{
+	height:25%;
+	width:20%;
+	border-radius:5px;
+	padding:20px;
   	border: none;
+	margin-top:6px;
+	margin-bottom:3px;
+	margin-right:5vh;
+	margin-left:70vh;
  	text-decoration: none;
-	margin-right:300px;
-	width:40%;
-	height:15px;
+}
+.input2{
+	height:25%;
+	width:20%;
+	border-radius:5px;
+	padding:20px;
+  	border: none;
+	margin-top:6px;
+	margin-bottom:3px;
+	margin-right:5vh;
+	margin-left:20vh;
+ 	text-decoration: none;
 }
 .image{
 	width:30px;
 	height:30px;
 }
 .pluss{
+	width:20%;
 	margin-right:1vh;
-}
-.delete{
-	margin-right:20vh;
 }
 .plus{
 	margin-top:5px;
-	width:70px;
-	height:70px;
+	width:60px;
+	height:60px;
 }
 .delete{
 	margin-top:5px;
-	width:70px;
-	height:70px;
+	margin-left:48vh;
+	margin-right:1vh;
+	width:60px;
+	height:60px;
+}
+.delete1{
+	margin-top:1px;
+	margin-left:20px;
+	margin-bottom:5px;
+	width:68px;
+	height:68px;
 }
 .display{
 	display:flex;

@@ -3,42 +3,56 @@ import {context}                      from '../context.js';
 import Display                        from './Display.js';
 
 const Friends = () => {
-	const {dispatch}         = useContext(context);
-	const [search,setSearch] = useState('');
-	const [blank,setBlank]   = useState(false);
+	const {state,dispatch}         =  useContext(context);
+	const [groupname,setGroupname] = useState('');
+	const [username,setUsername]   = useState('');
+	const [blank,setBlank]         = useState(false);
+	const [Group,setGroup]         = useState(false);
+	const [display,setDisplay]     = useState(false);
 
 	const handleclick = (e) => {
+		e.preventDefault();
+
+		const {group} = state;
 
 		setBlank(false);
+		setGroup(false);
+		setDisplay(false);
 
-		if(search !== '') {
-			dispatch({type:'ADD_FRIEND',payload:search})
+
+		if((groupname !== '' || username !== '')||(groupname !== '' && username !== '')) {
+			if(group.indexOf(groupname) > -1){
+				setDisplay(true);
+			}
+			else{
+				setGroup(true);
+			}
 		}
 		else {
 			setBlank(true);
 		}
 
-		setSearch('');
+	}
+
+	const handlechange = (e) => {
+		e.preventDefault();
+		setGroupname(e.target.value)
+		setBlank(false);
+		setGroup(false);
+		setDisplay(false);
 	}
 
 	return(
 		<div className='Friends'>
 			<div className='search'>
-				<div>
-					<input className='input' type='text' className='input' value={search} placeholder='enter a friend' 
-						onChange={e => setSearch(e.target.value)}/>
-				</div>
-				<div className='pluss'>
-					<img src={require('./plus-flat.png')} className='plus' alt='plus'
+					<input className='input2'  type='text' value={groupname} placeholder='enter groupname' 
+						onChange={handlechange}/>
+					<img src={require('./images/search.png')} className='plus' alt='plus'
 						onClick={handleclick}/>
-				</div>
-				<div className='delete'>
-					<img src={require('./data-delete-icon.png')} className='delete' alt='plus'
-						onClick={e=>dispatch({type:'REMOVE_FRIEND'})}/>
-				</div>
 			</div>
 			{blank ? <div className='invalid'> Please enter a name </div> : null}
-			<Display/>
+			{Group ? <div className='invalid'> Please enter a valid groupname </div> : null}
+			{display && groupname ? <Display group={groupname}/>:null}
 		</div>
 		);
 };
