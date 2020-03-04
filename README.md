@@ -2,9 +2,12 @@
 
 This Application is been build using react, for global state management context+hooks is used
 
-Initial splitwise Hosted on :https://quizzical-torvalds-ddc88c.netlify.com/
+version 0 Hosted on :https://quizzical-torvalds-ddc88c.netlify.com/
 
-Improved splitwise Hosted on: https://epic-blackwell-385e66.netlify.com/
+version 1 Hosted on: https://epic-blackwell-385e66.netlify.com/
+
+version 2 Hosted on:https://sleepy-turing-b0cc7b.netlify.com/
+
 
 In order to start ,
 
