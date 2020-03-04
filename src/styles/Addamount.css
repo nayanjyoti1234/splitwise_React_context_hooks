@@ -1,0 +1,56 @@
+
+.Groups{
+	width:100%;
+	margin-top:9vh;
+	height:100%;
+	background-color:#E2E8DB;
+}
+.text{
+  margin-left:50vh;
+  margin-top:1vh;
+  height:8vh;
+  display:block;
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.number{
+  margin-left:50vh;
+  margin-top:1vh;
+  height:10vh;
+  display:block;
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.Submit{
+  margin-top:2vh;
+  height:9vh;
+  width:30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left:68vh;
+}
+
+.invalid{
+	margin-top:4px;
+	text-align:center;
+	letter-spacing:2px;
+	color:red;
+}
+.submit{
+	margin-top:4px;
+	text-align:center;
+	letter-spacing:2px;
+	color:green;
+}

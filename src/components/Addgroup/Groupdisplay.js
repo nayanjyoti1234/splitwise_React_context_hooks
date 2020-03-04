@@ -1,5 +1,5 @@
 import React,{ useContext,useState,useEffect }   from 'react';
-import { context }                     from '../context.js';
+import { context }                     from '../../context.js';
 
 
 const Groupdisplay = () => {

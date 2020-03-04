@@ -1,5 +1,5 @@
 import React,{ useContext,useState }   from 'react';
-import { context }                     from '../context.js';
+import { context }                     from '../../context.js';
 
 var array   = [];
 var array1  = [];

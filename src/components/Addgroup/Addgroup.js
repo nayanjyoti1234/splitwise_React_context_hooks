@@ -1,5 +1,5 @@
 import React, {useState,useContext}   from 'react';
-import {context}                      from '../context.js';
+import {context}                      from '../../context.js';
 import Groupdisplay                   from './Groupdisplay.js';
 
 const Addgroup = () => {
@@ -60,11 +60,11 @@ const Addgroup = () => {
 			<div className='search'>
 				<input className='input1' type='text'  value={groups} placeholder='Add or Remove a group' 
 					onChange={e => setGroup(e.target.value)}/>
-				<img src={require('./images/plus-flat.png')} className='plus' alt='plus'
+				<img src={require('../images/plus-flat.png')} className='plus' alt='plus'
 					onClick={handleclick}/>
-				<img src={require('./images/minus1.png')} className='delete1' alt='plus'
+				<img src={require('../images/minus1.png')} className='delete1' alt='plus'
 					onClick={handleclick1}/>
-				<img src={require('./images/delelte-red1.png')} className='delete' alt='plus'
+				<img src={require('../images/delelte-red1.png')} className='delete' alt='plus'
 					onClick={()=>{ 
 					return window.confirm("Are you sure you want to delete all the groups?") === true ?
 					dispatch({type:'REMOVE_DATA'}):null 

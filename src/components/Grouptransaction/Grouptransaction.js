@@ -1,5 +1,5 @@
 import React, {useState,useContext}   from 'react';
-import {context}                      from '../context.js';
+import {context}                      from '../../context.js';
 
 const Home = () => {
 	const {state,dispatch}     = useContext(context);
@@ -44,7 +44,7 @@ const Home = () => {
 			<div className='search'>
 					<input className='input2'  type='text' value={groupname} placeholder='enter groupname to check group transaction' 
 						onChange={handlechange}/>
-					<img src={require('./images/search.png')} className='plus' alt='plus'
+					<img src={require('../images/search.png')} className='plus' alt='plus'
 						onClick={handleclick}/>
 				</div>
 			</div>

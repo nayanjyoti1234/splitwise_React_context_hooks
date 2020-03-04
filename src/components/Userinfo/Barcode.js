@@ -1,8 +1,8 @@
 import React, {useState,useContext}   from 'react';
-import {context}                      from '../context.js';
-import Display                        from './Display.js';
+import {context}                      from '../../context.js';
+import Displaybarcode                 from './Displaybarcode.js';
 
-const Friends = () => {
+const Barcode = () => {
 	const {state,dispatch}         =  useContext(context);
 	const [groupname,setGroupname] = useState('');
 	const [username,setUsername]   = useState('');
@@ -47,14 +47,14 @@ const Friends = () => {
 			<div className='search'>
 					<input className='input2'  type='text' value={groupname} placeholder='enter groupname' 
 						onChange={handlechange}/>
-					<img src={require('./images/search.png')} className='plus' alt='plus'
+					<img src={require('../images/search.png')} className='plus' alt='plus'
 						onClick={handleclick}/>
 			</div>
 			{blank ? <div className='invalid'> Please enter a name </div> : null}
 			{Group ? <div className='invalid'> Please enter a valid groupname </div> : null}
-			{display && groupname ? <Display group={groupname}/>:null}
+			{display && groupname ? <Displaybarcode group={groupname}/>:null}
 		</div>
 		);
 };
 
-export default Friends;
+export default Barcode;

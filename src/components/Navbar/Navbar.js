@@ -7,16 +7,19 @@ const Navbar = () => {
 			<div className='splitwise'>Splitwise</div>
 			<div className='links'>
 				<div className='addgroups'>	
-					<NavLink to='/addgroups'>Add or Remove Group</NavLink>
+					<NavLink to='/'>Add or Remove Group</NavLink>
 				</div>
 				<div className='ho'>
-					<NavLink to='/'>Group Transactions</NavLink>
+					<NavLink to='/grouptransaction'>Group Transactions</NavLink>
 				</div>
 				<div className='friends'>
-					<NavLink to='/friends'>User-tranactions in a group</NavLink>
+					<NavLink to='/usergrouptransaction'>User-tranactions in a group</NavLink>
+				</div>
+				<div className='barcode'>
+					<NavLink to='/userinfo'>User Info</NavLink>
 				</div>
 				<div className='groups'>	
-					<NavLink to='/groups'>Add amount</NavLink>
+					<NavLink to='/addamount'>Add amount</NavLink>
 				</div>
 			</div>
 		</div>

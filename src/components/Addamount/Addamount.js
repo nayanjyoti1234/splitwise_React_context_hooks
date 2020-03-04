@@ -1,8 +1,8 @@
 import React, { useState,useContext }   from 'react';
-import { context }                      from '../context.js';
+import { context }                      from '../../context.js';
 import uuidv4                           from 'uuid/v4';
 
-const Groups = () => {
+const Addamount = () => {
 	const [amount,setAmount]          = useState('');
 	const [give,setGive]              = useState('');
 	const [recieve,setRecieve]        = useState('');
@@ -65,4 +65,4 @@ const Groups = () => {
 	);
 };
 
-export default Groups;
+export default Addamount;
